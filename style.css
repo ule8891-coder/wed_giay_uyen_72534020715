@@ -1,0 +1,129 @@
+/* RESET LỀ VÀ PHÔNG CHỮ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    padding: 15px;
+    color: #222222;
+}
+
+/* KHUNG CHÍNH CHỨA TOÀN BỘ NỘI DUNG */
+.bome {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+/* THANH HEADER VÀ MENU LIÊN KẾT 5 TRANG */
+.me-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #0b74e5;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+}
+
+.chau-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0b74e5;
+}
+
+.con-menu {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.con-menu a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.con-menu a.active, .con-menu a:hover {
+    background-color: #0b74e5;
+    color: #ffffff;
+}
+
+/* BANNER QUẢNG CÁO */
+.me-banner {
+    background: linear-gradient(135deg, #0b74e5, #00c6ff);
+    color: white;
+    padding: 30px;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* LƯỚI SẢN PHẨM RESPONSIVE FLEXBOX */
+.me-hang-sanpham, .grid-luoi-sanpham {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.con-sp-card, .item-sp {
+    flex: 1 1 200px;
+    border: 1px solid #e1e1e8;
+    padding: 12px;
+    text-align: center;
+    border-radius: 6px;
+    background: #fff;
+}
+
+.con-sp-card img, .item-sp img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.gia {
+    color: #d9534f;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* BẢNG THÔNG TIN VÀ CHÂN TRANG FOOTER */
+.bang-thong-tin {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.bang-thong-tin th {
+    background-color: #0b74e5;
+    color: white;
+    padding: 8px;
+}
+
+.bang-thong-tin td {
+    padding: 8px;
+    text-align: center;
+}
+
+.me-footer {
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 4px;
+    font-size: 13px;
+}
